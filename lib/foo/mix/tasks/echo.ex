@@ -11,7 +11,8 @@ defmodule Mix.Tasks.Echo do
     # IO.puts(a)
     # a=EEx.eval_string("foo <%= bar %>", bar: args)
     # IO.puts(a)
-    IO.inspect(EEx.eval_file("priv/template/create_file/controller.ex", bar: "baz"))
+    map = %{a: 1, b: 2}
+    IO.inspect(EEx.eval_file("priv/template/create_file/controller.ex", bar: map))
     #File.rm!("lib/foo/example.ex")
     # File.rm_rf("lib/foo_web/controllers/auth")
     # File.rm_rf("lib/foo_web/views/auth")

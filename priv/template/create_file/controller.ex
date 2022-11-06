@@ -1,2 +1,1 @@
-a=foo <%= bar %>
-IO.inspect(a)
+a=foo <%= bar.a %> hello <%= bar.b %>
